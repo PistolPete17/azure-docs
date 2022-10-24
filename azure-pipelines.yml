@@ -5,7 +5,7 @@
 
 resources:
   repositories:
-  - repository: pipeline-dotnet-core
+  - repository: pipelines-dotnet-core
     type: github
     endpoint: MyGitHubServiceConnection
     name: MyGitHubOrgOrUser/MyGitHubRepo
