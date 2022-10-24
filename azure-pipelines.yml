@@ -8,7 +8,7 @@ resources:
   - repository: pipelines-dotnet-core
     type: github
     endpoint: MyGitHubServiceConnection
-    name: MyGitHubOrgOrUser/MyGitHubRepo
+    name: MyGitHubOrgOrg
     
 trigger:
 - master
