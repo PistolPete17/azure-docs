@@ -4,8 +4,15 @@
 # https://aka.ms/yaml
 
 resources:
+  repositories:
+  - repository: pipelines-dotnet-core # The name used to reference this repository in the checkout step
+    type: github
+    endpoint: PistolPete17
+    name: PistolPete17/pipelines-dotnet-core
+
+resources:
   pipelines:
-  - pipeline: /PistolPete17/pipelines-dotnet-core # Name of the pipeline resource.
+  - pipeline: PistolPete17/pipelines-dotnet-core # Name of the pipeline resource.
     source: PistolPete17.pipelines-dotnet-core # The name of the pipeline referenced by this pipeline resource.
     project: pipeline1 # Required only if the source pipeline is in another project
     trigger: true # Run app-ci pipeline when any run of security-lib-ci completes
