@@ -5,10 +5,10 @@
 
 resources:
   repositories:
-  - repository: pipelines-dotnet-core
+  - repository: pipelines-dotnet-core # The name used to reference this repository in the checkout step
     type: github
     endpoint: PistolPete17
-    name: PeteyPete258/Repo1
+    name: PistolPete17/pipelines-dotnet-core
     
 trigger:
 - master
